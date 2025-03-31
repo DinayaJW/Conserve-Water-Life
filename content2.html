@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .banner-area {
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            padding-top: 10%;
+        }
+
+        .content-area{
+            padding: 5%;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+<header>
+    <!-- Logo and menu button -->
+    <div class="logo">
+        <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+        <div class="menu-btn"></div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Team.html">Team</a>
+            <a href="userprofile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+       
+    </div>
+</header>
+
+    <div class="banner-area">
+      <img src="overfishing.jpg" width="320px" height="240px" >
+    </div>
+
+    <div class="content-area">
+        <div class="wrapper">
+            <h2>Overfishing: Causes, Consequences, and Solutions</h2><br>
+            
+            <p>Overfishing, a rapid catch of fish, leads to a significant decline in fish stocks, disrupting marine ecosystems, and threatening the livelihoods of fishing-dependent communities.</p><br>
+
+            <p>The global demand for seafood is increasing due to growing populations and shifting diets. Modern fishing methods, like trawling and long-lining, capture large quantities of fish. Inadequate regulations and illegal, unreported, and unregulated (IUU) fishing contribute to overfishing, especially in international waters.</p><br>
+
+            <p>Overfishing poses significant threats to fish populations, marine ecosystems, and economic stability. It can lead to the extinction of many fish species, disrupt marine food webs, and negatively impact coastal communities relying on fishing for livelihoods. Additionally, overfishing reduces the availability of seafood, a primary protein source for millions worldwide.</p><br>
+
+            <p>Public awareness and education on the importance of coral ecosystems are essential. By understanding the value of coral reefs and the threats they face, individuals can take informed actions to protect them. Simple steps, such as using reef-safe sunscreen, reducing water pollution, and supporting conservation efforts, can collectively make a significant difference. By taking action now, we can preserve these underwater treasures for future generations, ensuring the health and balance of our oceans.</p><br>
+            
+            <p>Implementing scientific-based fishing quotas, promoting sustainable fishing practices, and establishing marine protected areas (MPAs) are key to ensuring sustainable harvest levels. Strengthening international agreements and regulations is essential for managing fish stocks in international waters. Educating consumers about sustainable seafood choices supports responsible fishing practices. Enhancing monitoring and control of fishing activities can help reduce illegal fishing practices, ultimately promoting responsible fishing practices.</p><br>
+        
+            <p>Marine Protected Areas (MPAs) are areas where human activities, particularly fishing, are restricted or regulated to conserve marine ecosystems and biodiversity. They help combat overfishing by providing safe zones for fish breeding and growth, preserving critical habitats like coral reefs and mangroves, and supporting research and monitoring efforts to understand marine biodiversity and human activities' impacts.</p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for menu toggle functionality for menu and close button -->
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click",()=>{
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+    
+</script>
+
+<!-- Footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Info@yahoo.com</p>
+        </div>
+
+        <div class="footer-content">
+            <h3>Page Editor</h3>
+            <ul class="Editor-list">
+                <li><a href="student2.html"> Content - Overfishing </a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow  Us</h3>
+            <ul class="media-icons">
+            <li><a link="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+        </div>
+        
+    </div>
+    <div class="bar">
+        <p>&copy; All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .banner-area {
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            padding-top: 10%;
+        }
+
+        .content-area{
+            padding: 5%;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+<header>
+    <!-- Logo and menu button -->
+    <div class="logo">
+        <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+        <div class="menu-btn"></div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Team.html">Team</a>
+            <a href="userprofile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+       
+    </div>
+</header>
+
+    <div class="banner-area">
+      <img src="seacreatures.jpg" width="600px" height="450px" >
+    </div>
+
+    <div class="content-area">
+        <div class="wrapper">
+            <h2>Sea Creatures: Diversity, Importance, and Conservation</h2><br>
+
+            <p>Sea creatures, including fish, mammals, invertebrates, and plants, inhabit oceans and saltwater bodies. They are crucial to marine ecosystems and range from microscopic plankton to the largest animal, the blue whale.</p><br>
+            
+            <p>The decreasing existence of various marine animals is a growing environmental issue
+                that needs dire attention. This not only leads to the extinction of many unique species of
+                sea animals but also the welfare of living beings underwater and on land alike. Many
+                actions are currently taking place of marine life, mainly to prohibit any form of human
+                activity, such as fishing or oil development so as to avoid overfishing and pollution of the
+                ocean, with the of conserving marine habitat.</p> <br>
+
+            <p>Moreover, taking into consideration the harmful repercussions of plastic pollution at sea,
+                which could lead sea animals, namely turtles and seals to be entangled and suffocated
+                or badly injured, proper disposal of plastics and usage of non-plastic elements
+    whenever possible is a main method that is implemented for this cause.</p><br>
+
+    <p>Marine littering is one main cause for the endangerment of sea creatures, as it can
+    damage the animal’s natural habitat and lead to the untimely demise of these innocent
+    creatures, taking into consideration their vulnerability and curiosity. Thus, claning up
+    after visiting beaches and only interacting with animals in the presence and guidance of
+    professionals will undoubtedly aid and abet in protecting sea creatures.</p>
+            
+        </div>
+
+    </div>
+
+    <!-- JavaScript for menu toggle functionality for menu and close button -->
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click",()=>{
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+    
+</script>
+
+<!-- Footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Info@yahoo.com</p>
+        </div>
+
+        <div class="footer-content">
+            <h3>Page Editor</h3>
+            <ul class="Editor-list">
+                <li><a href="student4.html"> Content - Sea creatures </a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow  Us</h3>
+            <ul class="media-icons">
+            <li><a link="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+        </div>
+        
+    </div>
+    <div class="bar">
+        <p>&copy; All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

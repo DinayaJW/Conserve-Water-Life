@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+
+
+header .navigation {
+    position: relative;
+}
+
+
+header .logo img{
+    float: left;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color:rgb(79, 176, 176);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+   
+
+}
+
+    header .navigation .navigation-items a::before {
+        content: ' ';
+        position: absolute;
+        background:rgb(79, 176, 176);
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease;
+    }
+
+
+    header .navigation .navigation-items a:hover::before {
+        width: 100%;
+    }
+
+
+    @media(max-width:1040px){
+        header{
+            padding: 12px 20px;
+    }
+
+        section {
+            padding: 100px 20px;
+    } 
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top:0;
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:#fff ;
+    }
+
+    header .navigation .navigation-items a {
+        color:rgb(79, 176, 176);
+        font-size: 1.2em;
+        margin: 20px;
+    }
+
+   
+
+    header .navigation .active .navigation-items a {
+        color:#fff;
+        width: 400px;
+        max-width: 400px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 5px 25px rgb(1 1 1 /20%);
+
+    }
+
+    header .navigation .navigation-items a::before{
+        background: rgb(79, 176, 176);
+        height: 5px;
+
+    }
+
+    header .navigation.active.navigation-items{
+        background: #fff;
+        width: 200px;
+        max-width: 200px;
+        margin: 20px;
+        padding: 40px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        border-radius:5px;
+        box-shadow: 0.5px 25px rgb(1 1 1 / 20%);
+        }
+
+        .menu-btn{
+            float:right;
+            background: url(menu.png)no-repeat;
+            background-size: 30px;
+            background-position: center;
+            width:112.5px;
+            height: 112.5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+    
+        }
+    
+        .menu-btn.active{
+            z-index: 999;
+            background: url(close.png)no-repeat;
+            background-size:30px ;
+            width:112.5px;
+            height: 112.5px;
+            background-position: center;
+            transition: 0.3s ease;
+        }
+        
+
+}
+
+footer{
+    padding-top: 50px;
+    background-color:#fff;
+}
+
+.footer-container{
+    width:1140px;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+}
+.footer-content{
+    width: 33.3%;
+    color:rgb(79, 176, 176);
+}
+
+ h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-content p{
+    text-align: center;
+    width:190px;
+    margin:auto;
+    padding:7px;
+}
+
+.footer-content ul{
+    text-align: center;
+
+    }
+
+.Editor-list{
+    padding: 0;
+    list-style-type:none;
+}
+
+.Editor-list li{
+    width:auto;
+    text-align: center;
+    padding:7px;
+    position:relative;
+}
+
+.Editor-list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background:#fff;
+    transition-duration: 0.5s;
+}
+
+.Editor-list:hover::before{
+    width:70px;
+}
+
+.media-icons{
+    text-align: center;
+    padding:0;
+}
+.media-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.media-icons i{
+    color: rgb(79, 176, 176);
+    font-size: 25px;
+}
+
+.bar{
+  text-align: center;
+  padding: 10px 0;
+  margin-top:20px;  
+}
+
+.bar p{
+    margin:0;
+    font-size:16px;
+    color:rgb(79, 176, 176)
+   
+}

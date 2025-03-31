@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="template.css">
+    <style>
+        .banner-area {
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+            padding-top: 10%;
+        }
+
+        .content-area{
+            padding: 5%;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+<header>
+    <!-- Logo and menu button -->
+    <div class="logo">
+        <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+        <div class="menu-btn"></div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Team.html">Team</a>
+            <a href="userprofile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+       
+    </div>
+</header>
+
+    <div class="banner-area">
+      <img src="oceanpollution.jpg" width="640px" height="440px" >
+    </div>
+
+    <div class="content-area">
+        <div class="wrapper">
+            <h2>Ocean Pollution: Causes, Effects, and Solutions</h2><br>
+            
+            <p>Marine Pollution Overview
+                <ul>
+                <li>Plastic Waste: Pervasive pollutant from single-use items, packaging, and discarded fishing gear.</li>
+                <li>Chemical Runoff: Harmful chemicals from agricultural and industrial runoff into ocean.</li>
+                <li>Oil Spills: Large quantities of oil released from tankers, offshore drilling rigs, and pipelines.</li>
+                <li>Sewage and Wastewater: Untreated or inadequately treated sewage and wastewater introduce pathogens and nutrients, causing water contamination.</li>
+                <li>Marine Debris: Abandoned fishing nets, metal, glass, and other debris harm marine organisms.</li>
+                <li>Noise Pollution: Increased noise from shipping, naval activities, and underwater construction disrupts marine life communication and navigation.</li></ul></p><br>
+
+            <p>Plastic pollution harms marine life by entangling them in debris, leading to injury and food chain disruption. It also degrades habitats like coral reefs, mangroves, and seagrass beds, affecting biodiversity and ecosystem services. Pollutants accumulate in marine tissues, affecting entire food webs and human consumption. Excess nutrients from agricultural runoff cause algal blooms, depleting oxygen levels and creating dead zones. Contaminated seafood poses health risks.</p><br>
+
+            <p>To combat ocean pollution, reduce single-use plastics, enforce strict regulations on industrial discharge, agricultural runoff, and sewage treatment, improve oil spill prevention measures, promote recycling and cleanup efforts, strengthen international cooperation, and raise public awareness about ocean pollution sources and impacts. These measures can help protect global marine resources, reduce pollution, and promote a culture of environmental stewardship, ultimately reducing the harmful effects of ocean pollution.</p><br>
+
+            <p>Policy and innovation are crucial in combating ocean pollution, involving enacting laws, developing new technologies, and promoting sustainable practices to protect marine environments and reduce pollution burden.</p><br>
+            
+        </div>
+
+    </div>
+
+    <!-- JavaScript for menu toggle functionality for menu and close button -->
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click",()=>{
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+    
+</script>
+
+<!-- Footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Info@yahoo.com</p>
+        </div>
+
+        <div class="footer-content">
+            <h3>Page Editor</h3>
+            <ul class="Editor-list">
+                <li><a href="student3.html"> Content - Ocen Pollution </a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow  Us</h3>
+            <ul class="media-icons">
+            <li><a link="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+        </div>
+        
+    </div>
+    <div class="bar">
+        <p>&copy; All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>

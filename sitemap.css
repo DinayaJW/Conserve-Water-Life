@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.topic {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* customizing the interactive sitemap  */
+.interactive-svg {
+    padding: 30px;
+    padding-bottom: 30px;
+    width: auto;
+    height: max-content;
+    background-color: #023454;
+    align-content: center;
+
+}
+/* customizing the nodes  */
+.node rect {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+/* customizing the text on the nodes  */
+.node text {
+    fill: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-anchor: middle;
+    font-weight: bold;
+}
+/* customizing the hover styling of the nodes  */
+.node:hover rect {
+    fill: #ecac17;
+    cursor: pointer;
+}
+/* customizing the linking lines between nodes  */
+.line {
+    stroke: #fff;
+    stroke-width: 2px;
+}

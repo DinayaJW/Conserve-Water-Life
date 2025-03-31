@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- HTML embedding for Eczar font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">      
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+  <!-- HTML embedding for Cormorant Garamond font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+  <!-- HtML embedding for Playfair Display font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Eczar:wght@400..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <title>Galley</title>
+
+  <!-- The CSS Files -->
+  <link rel="stylesheet" href="Gallery.css">
+  <!-- The CSS file for the header and fopter -->
+  <link rel="stylesheet" href="template.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <!-- The Logo and menu button -->
+    <div class="logo">      
+        <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+        <div class="menu-btn"></div>
+    </div>
+    <!-- The Navigation bar -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Team.html">Team</a>
+            <a href="userprofile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+       
+    </div>
+</header>
+<!-- The main heading of the gallery page -->
+<h1>Gallery</h1>
+
+<!-- customizing the gallery background and font according to user preference -->
+<div id="Customize">
+  <!-- Heading for the customizing part -->
+  <h2>Customization</h2>    
+  <!-- the label for the colour picking option -->
+  <label for="color-picker"> Choose a background colour.</label>
+  <input type="color" id="color-picker" value="#47E236">
+
+  <!-- The label for font picker option -->
+  <label for="font-picker">   Choose a font.</label> 
+  <!-- dropdown selection to pick a font -->
+  <select name="Select font" id="font-picker">
+    <option value="Playfair Display">Playfair Display</option>
+    <option value="Eczar">Eczar</option>
+    <option value="Cormorant Garamond">Cormorant Garamond</option>
+
+  </select>
+</div>
+<!-- container class for thumbnail images -->
+<div class="container">  
+  <div class="gallery">
+    <div class="image-wrapper">
+      <!-- Image for ocean pollution image thumbnail -->
+      <img src="Images/ocean pollution4.jpg" alt="ocean pollution">
+      <!-- Overlay text display on the thumbnail image -->
+      <div class="overlay">
+        <div class="text">Ocean pollution</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <!-- Image fishing image thumbnail -->
+      <img src="Images/fishing.jpg" alt="fishing">
+      <div class="overlay">
+        <div class="text">Overfishing</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <!-- Image for great barrier reef image thumbnail -->
+      <img src="Images/great barrier reef.jpg" alt="barrier reef">
+      <div class="overlay">
+        <div class="text">Great Barrier Reef</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <!-- Image for ocorals image thumbnail -->
+      <img src="Images/corals4.jpg" alt="corals">
+      <div class="overlay">
+        <div class="text">Corals</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <!-- Image for turtle image thumbnail -->
+      <img src="Images/turtle_before.jpg" alt="turtle">
+      <div class="overlay">
+        <div class="text">Turtles</div>
+      </div>
+    </div>
+    <div class="image-wrapper">
+      <!-- Image for seals image thumbnail -->
+    <img src="Images/seals.jpg" alt="seal">
+      <div class="overlay">
+        <div class="text">Seals</div>
+      </div>
+    </div>  
+  </div>  
+</div>
+
+<!-- the popup class to expand image when clicked -->
+<div class="popup" id="imagePopup">
+  <div class="popup-content">
+    <!-- image that should expand and popup when ocean pollution thumbnail image is clicked -->
+      <img src="ocean pollution - effects2.jpg" alt="Expanded Image" id="expandedImage">
+      <p id="imageDescription">Ocean</p>
+      <!-- close button that sjhould be displayed to close the expanded image -->
+      <span class="close-button" onclick="closePopup()">&times;</span>
+  </div>
+</div>
+
+<!-- The link to external javascript file -->
+<script src="Gallery.js"></script>
+
+<!-- javascript for the menu button -->
+<script type="text/javascript">
+  // selecting menu button 
+  const menuBtn = document.querySelector(".menu-btn");
+  // selecting navigation 
+  const navigation = document.querySelector(".navigation");
+
+  // eventlistener is added to menu button to wait for the click
+  menuBtn.addEventListener("click",()=>{
+    // toggle active class on menu,  to add or remove a class
+      menuBtn.classList.toggle("active");
+      // toggle active class on navigation
+      navigation.classList.toggle("active");
+  });
+  
+</script>
+
+<!-- the website footer -->
+<footer>
+  <div class="footer-container">
+      <div class="footer-content">
+        <!-- footer contact us heading -->
+          <h3>Contact Us</h3>
+          <!-- the contact email -->
+          <p>Info@yahoo.com</p>
+      </div>
+      
+      <!-- page editor heading -->
+      <div class="footer-content">
+          <h3>Page Editor</h3>
+          <ul class="Editor-list">
+            <!-- link to home page -->
+              <li><a>Home</a></li>
+              
+          </ul>
+      </div>
+      <!-- follow us part in footer -->
+      <div class="footer-content">
+        <!-- heading for the follow us section -->
+          <h3>Follow  Us</h3>
+          <!-- class to display social media icons in footer -->
+          <ul class="media-icons">
+            <!-- facebook icon -->
+          <li><a link="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+          <!-- twitter icon -->
+          <li><i class="fab fa-twitter"></i></li>
+          <!-- linkdin icon -->
+          <li><i class="fab fa-linkedin"></i></li>
+      </ul>
+      </div>
+      
+  </div>
+  <!-- class to display copyright notice -->
+  <div class="bar">
+      <p>&copy; All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

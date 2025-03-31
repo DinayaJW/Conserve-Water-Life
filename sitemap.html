@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of webpage -->
+    <title>Interactive SVG Site Map</title>
+    <!-- link to CSS file with header and footer  -->
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <!-- external CSS link for sitemap style  -->
+    <link rel="stylesheet" href="sitemap.css">
+
+</head>
+<body>
+    <header>
+        <!--The Logo and menu button -->
+        <div class="logo">
+            <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+            <div class="menu-btn"></div>
+        </div>
+        <!-- Navigation bar -->
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Shop.html">Shop</a>
+                <a href="Sitemap.html">Site Map</a>
+                <a href="Team.html">Team</a>
+                <a href="userprofile.html">User Profile</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+           
+        </div>
+    </header>
+
+    <!-- the topic in a sitemap website -->
+    <div class="topic">
+        <text>Site Map</text>
+    </div>
+    <!-- SVG class for interactive sitemap design -->
+    <svg class="interactive-svg" viewBox="0 0 1600 650">
+        <!-- The Home Node (main node)-->
+        <g class="node" id="home" transform="translate(800, 50)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#47b7d6"/>
+            <!-- text displayed on the node  -->
+            <text x="0" y="0">Home</text>
+        </g>
+
+        <!--the Content Node (sub node) -->
+        <g class="node" id="content" transform="translate(150, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <!-- text displayed on the node  -->
+            <text x="0" y="0">Content</text>
+        </g>
+        <!-- overfishing Node (sub node of content) -->
+        <g class="node" id="overfishing" transform="translate(150, 300)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#ff4081"/>
+            <text x="0" y="0">Overfishing</text>
+        </g>
+        <!-- ocean pollution Node (sub node of content) -->
+        <g class="node" id="ocean-pollution" transform="translate(150, 400)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#ff4081"/>
+            <text x="0" y="0">Ocean Pollution</text>
+        </g>
+        <!-- saving corals Node (sub node of content) -->
+        <g class="node" id="saving-corals" transform="translate(150, 500)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#ff4081"/>
+            <text x="0" y="0">Saving Corals</text>
+        </g>
+        <!-- sea creatures Node (sub node of content) -->
+        <g class="node" id="sea-creatures" transform="translate(150, 600)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#ff4081"/>
+            <text x="0" y="0">Protect Sea Creatures</text>
+        </g>
+
+        <!--  the Gallery Node )(sub node) -->
+        <g class="node" id="gallery" transform="translate(410, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <text x="0" y="0">Gallery</text>
+        </g>
+
+        <!--  The Shop Node (sub node) -->
+        <g class="node" id="shop" transform="translate(670, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <text x="0" y="0">Shop</text>
+        </g>
+
+        <!--the Team Node (sub node) -->
+        <g class="node" id="team" transform="translate(930, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <text x="0" y="0">Team</text>
+        </g>
+        <!-- student 1 Node (sub node of team) -->
+        <g class="node" id="student1" transform="translate(930, 300)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#4caf50"/>
+            <text x="0" y="0">Student 1</text>
+        </g>
+        <!-- student 2 Node (sub node of team) -->
+        <g class="node" id="student2" transform="translate(930, 400)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#4caf50"/>
+            <text x="0" y="0">Student 2</text>
+        </g>
+        <!-- student 3 Node (sub node of team) -->
+        <g class="node" id="student3" transform="translate(930, 500)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#4caf50"/>
+            <text x="0" y="0">Student 3</text>
+        </g>
+        <!-- student 4 Node (sub node of team) -->
+        <g class="node" id="student4" transform="translate(930, 600)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#4caf50"/>
+            <text x="0" y="0">Student 4</text>
+        </g>
+
+        <!--the User Profile Node (sub node) -->
+        <g class="node" id="user-profile" transform="translate(1190, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <text x="0" y="0">User Profile</text>
+        </g>
+
+        <!-- the Feedback Node (sub node)-->
+        <g class="node" id="feedback" transform="translate(1450, 200)">
+            <rect x="-75" y="-25" width="150" height="50" fill="#c375f0"/>
+            <text x="0" y="0">Feedback</text>
+        </g>
+
+        <!-- Linking Lines -->
+        <!-- The Vertical line connecting Home to the sub nodes -->
+        <line x1="800" y1="75" x2="800" y2="150" class="line"/>
+        <!-- Horizontal line connecting all the sub-nodes of home -->
+        <line x1="150" y1="150" x2="1450" y2="150" class="line"/>
+        <!-- Vertical lines from sub node connector to sub-nodes -->
+        <line x1="150" y1="150" x2="150" y2="175" class="line"/>
+        <line x1="410" y1="150" x2="410" y2="175" class="line"/>
+        <line x1="670" y1="150" x2="670" y2="175" class="line"/>
+        <line x1="930" y1="150" x2="930" y2="175" class="line"/>
+        <line x1="1190" y1="150" x2="1190" y2="175" class="line"/>
+        <line x1="1450" y1="150" x2="1450" y2="175" class="line"/>
+        
+        <!-- Vertical lines connecting Content node to it's sub-nodes -->
+        <line x1="150" y1="225" x2="150" y2="275" class="line"/>
+        <line x1="150" y1="325" x2="150" y2="375" class="line"/>
+        <line x1="150" y1="425" x2="150" y2="475" class="line"/>
+        <line x1="150" y1="525" x2="150" y2="575" class="line"/>
+        
+        <!-- Vertical lines connecting Team node to it's sub-nodes -->
+        <line x1="930" y1="225" x2="930" y2="275" class="line"/>
+        <line x1="930" y1="325" x2="930" y2="375" class="line"/>
+        <line x1="930" y1="425" x2="930" y2="475" class="line"/>
+        <line x1="930" y1="525" x2="930" y2="575" class="line"/>
+    </svg>
+    
+    <!-- lin to the external javascript file -->
+    <script src="sitemap.js"></script>
+
+    <!-- the footer of the website  -->
+    <footer>
+    <div class="footer-container">
+        <!-- contact us part in footer -->
+        <div class="footer-content">
+            <!-- heading for the contact us heading -->
+            <h3>Contact Us</h3>
+             <!-- the contact email -->
+            <p>Info@yahoo.com</p>
+        </div>
+
+        <!-- page editor heading -->
+        <div class="footer-content">
+            <h3>Page Editor</h3>
+            <ul class="Editor-list">
+                <!-- link to home page -->
+                <li><a>Home</a></li>
+                
+            </ul>
+        </div>
+        <!-- follow us part in footer -->
+        <div class="footer-content">
+            <!-- heading for the follow us section -->
+            <h3>Follow  Us</h3>
+            <!-- class to display social media icons in footer -->
+            <ul class="media-icons">
+                <!-- facebook icon -->
+            <li><a link="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <!-- twitter icon -->
+            <li><i class="fab fa-twitter"></i></li>
+            <!-- linkdin icon -->
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+        </div>
+        
+    </div>
+    <div class="bar">
+        <p>&copy; All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>

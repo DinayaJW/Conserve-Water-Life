@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Conserve Water Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+     <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+</head>
+<body>
+
+<!-- Header section -->
+<header>
+    <!-- Logo and menu button -->
+    <div class="logo">
+        <img src="logo.png" alt="conserve water life logo" height="44" width="223">
+        <div class="menu-btn"></div>
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Shop.html">Shop</a>
+            <a href="sitemap.html">Site Map</a>
+            <a href="Team.html">Team</a>
+            <a href="userprofile.html">User Profile</a>
+            <a href="feedback.html">Feedback</a>
+        </div>
+       
+    </div>
+</header>
+
+<!-- Section with video background -->
+<section class="home">
+    <video class="video-slide" src="underwater.mp4" autoplay muted loop></video>
+    <div class="content">
+        <h1>Conserve Water Life</h1>
+        <p>Conserve and sustainably use the oceans, seas and marine resources for sustainable development and protecting the natural beauty and resources found beneath the ocean's surface.</p><br>
+    </div>
+</section>
+
+<!-- Section with Website vision and mission -->
+<section class="content-container">
+    <div class="main">
+<h2> Our Vision</h2> 
+<p> To save Coral reefs, clear waters, marine protected areas, sustainable fishing practices, and thriving coastal communities are all vital for the health and resilience of fish populations.</p>
+<br><h2>Our Mission</h2>
+<ol>
+<li>Implement coral gardening, establish marine protected areas, reduce pollution, promote sustainable tourism, and conduct public awareness campaigns to protect coral reefs.</li>
+<li>Implement waste management systems in coastal cities, promote biodegradable materials, reduce single-use plastics, conduct regular beach and underwater clean-ups, strengthen international regulations, and support marine pollution research.</li>
+<li>Implement science-based fishing quotas, promote selective gear, support small-scale fisheries, enhance international cooperation against IUCU, and develop sustainable aquaculture practices for environmental and social equity.</li>
+<li>The global network of marine protected areas, habitat restoration projects, legal frameworks, community-based conservation initiatives, and international agreements are being implemented to protect endangered marine species.</li>
+</ol>
+</div>
+</section>
+
+<!-- Section with content edited by each student role -->
+<section class="content-section">
+<h1>Our Goals</h1>
+<div class="content-post"></div>
+<div class="row">
+    <div class="col">
+        <!-- Content of student role  2 -->
+        <h2>overfishing</h2>
+        <img src="overfishing.jpg" alt="overfishing" height="300px" width="300px">
+        <h4>Overfishing threatens marine ecosystems and fish stocks. Immediate action through science-based management, sustainable fishing, and consumer awareness can mitigate its impacts and preserve ocean health.</h4>
+        <a href="content2.html"> Readmore </a>
+
+    </div>
+
+    <!-- Content of student role 3 -->
+    <div class="col">
+        <h2>ocean pollution</h2>
+        <img src="oceanpollution.jpg" alt="ocean pollution" height="300px" width="300px">
+        <h4>Ocean pollution requires comprehensive efforts to reduce sources, enhance regulatory frameworks, and promote conservation for marine ecosystems' health and sustainability for future generations.</h4>
+        <a href="content3.html"> Readmore </a>
+    </div>
+
+    <!-- Content of student role  1 -->
+    <div class="col">
+        <h2>corals</h2>
+        <img src="corals.jpg" alt="corals" height="300px" width="300px">
+        <h4>Coral reefs, vital ecosystems, face threats from human activities and environmental changes. Implementing conservation strategies and sustainable practices can protect and preserve them for future generations.</h4>
+        <a href="content1.html"> Readmore </a>
+
+    </div>
+
+    <!-- Content of student role  4 -->
+    <div class="col">
+        <h2>sea creatures</h2>
+        <img src="seacreatures.jpg" alt="seacreatures" height="300px" width="300px">
+        <h4>Sea creatures are crucial for marine ecosystems, but threats from human activities and environmental changes threaten their survival. Conservation strategies and sustainable practices can protect biodiversity.</h4>
+        <a href="content4.html"> Readmore </a>
+
+    </div>
+</div>
+</section>
+
+<!-- JavaScript for menu toggle functionality for menu and close button -->
+<script type="text/javascript">
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click",()=>{
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+    
+</script>
+
+<!-- Footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Info@yahoo.com</p>
+        </div>
+
+        <div class="footer-content">
+            <h3>Page Editor</h3>
+            <ul class="Editor-list">
+                <li><a href="student2.html">Home</a></li>
+                
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow  Us</h3>
+            <ul class="media-icons">
+            <li><i class="fab fa-facebook"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-linkedin"></i></li>
+        </ul>
+        </div>
+        
+    </div>
+    <div class="bar">
+        <p>&copy; All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+</html>
